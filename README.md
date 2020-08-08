@@ -1,7 +1,7 @@
 # user-manage-system_demo
 
 ## 使用的技术栈
-### >element-ui框架
+`element-ui框架`
 ### mysql数据库
 ### vue-rouer
 ### jwt token验证
