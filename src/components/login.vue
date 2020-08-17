@@ -50,6 +50,7 @@ export default {
       };
     },
     mounted() {
+        console.log(this.$refs);
         if(this.LoginForm.name === '') {
             this.$refs.username.focus();
         }else if(this.LoginForm.password === '') {

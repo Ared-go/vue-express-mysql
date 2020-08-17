@@ -3,7 +3,7 @@
       <el-header class="header">
         <div class="logo">
           <img src="" alt="">
-          <span>后台管理系统</span>
+          <span>用户信息管理系统</span>
         </div>
         <el-button type="warning" plain @click="loginOff">退出</el-button>
       </el-header>
@@ -38,8 +38,16 @@
               </el-menu>
           </el-col>
           </el-aside>
+             <!-- enter-active-class="animate__animated animate__fadeOut" 
+                leave-active-class="animate__animated animate__fadeIn" -->
         <el-main class="main">
-          <router-view></router-view>
+          <transition 
+             enter-active-class="animate__animated animate__fadeIn"
+          >
+          <keep-alive include="user">
+            <router-view ></router-view>
+          </keep-alive>
+          </transition>
         </el-main>
       </el-container>
     </el-container>
@@ -68,7 +76,7 @@ export default {
       loginOff() {
         // 清楚sessionStorage中的token
         window.sessionStorage.clear();
-        console.log(this);
+        // console.log(this);
         // 将页面重定向到登录页面
         this.$router.push('/login');
       },

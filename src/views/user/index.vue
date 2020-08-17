@@ -124,6 +124,7 @@
 
 <script>
 export default {
+  name:"user",
   data(){
   var checkemail = (rule,value,cb) => {
     // 验证邮箱的正则表达式

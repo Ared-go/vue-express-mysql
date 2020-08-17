@@ -11,7 +11,6 @@ module.exports = {
                     '^/api': '' // 把/api替换为空 
                 }
             }
-
         }
     }
 }

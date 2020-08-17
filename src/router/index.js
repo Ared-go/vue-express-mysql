@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [{
         path: '/',
-        redirect: 'Login'
+        redirect: '/login'
     },
     {
         path: '/login',
@@ -34,6 +34,7 @@ const routes = [{
                     title: '用户管理'
                 },
                 path: '/users',
+                name: 'user',
                 component: () =>
                     import ('@/views/user/index.vue')
             },
@@ -67,8 +68,7 @@ const routes = [{
 
 const router = new VueRouter({
     routes
-})
-
+});
 // 挂载前置路由导航守卫
 router.beforeEach((to, from, next) => {
     console.log(to, from, next);
