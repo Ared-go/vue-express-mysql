@@ -4,7 +4,7 @@
 * `element-ui框架`
 * `mysql数据库`
 * `vue-rouer`
-* `jwt token验证`
+* `token验证`
 * `axios 请求的发送`
 ## 主要实现功能
 * > 用户的增删改查操作
