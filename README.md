@@ -3,14 +3,14 @@
 ## 使用的技术栈
 * `element-ui框架`
 * `mysql数据库`
-* `vue-rouer`
+* `vue-router`
 * `token验证`
 * `axios发送请求`
 ## 主要实现功能
 * > 用户的增删改查操作
 * > 用户的分页管理
 * > 根据用户名的查询功能
-* > 基于e-charts可视化图表展示
+* > 基于ECharts可视化图表展示
 * > element-ui的表格展示
 * > tip: 实现的功能比较简单 
 ## 后台实现(mysql+ express)
